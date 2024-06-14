@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link href=" https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css " rel="stylesheet">
 </head>
-<body>
-    
+<body class="bg-amber-50">
+    <header class="w-full bg-white h-20 drop-shadow-lg flex items-center justify-between px-10 fixed">
+        <div class="flex items-center gap-10">
+            <i class="ri-dice-line text-4xl"></i>
+            <ul class="flex gap-5">
+                <li class="menus">menu 1 <i class="ri-arrow-down-s-line"></i></li>
+                <li class="menus">menu 2 <i class="ri-arrow-down-s-line"></i></li>
+                <li class="menus">menu 3 <i class="ri-arrow-down-s-line"></i></li>
+                <li class="menus">menu 4 <i class="ri-arrow-down-s-line"></i></li>
+            </ul>
+        </div>
+        <div class="flex items-center">
+            <ul class="flex gap-5 items-center">
+                <li><button><i class="ri-global-line"></i>EN</button></li>
+                <li><button>Sign in</button></li>
+                <li><button class=" bg-purple-500 text-white px-2 py-1 rounded-lg">Sign up</button></li>
+            </ul>
+        </div>
+    </header>
+    <main class="flex flex-col items-center w-full h-full gap-20">
+        <div class="w-full flex flex-col items-center h-3/6 mt-40">
+            <div class="flex flex-col gap-10 text-center w-3/6 mb-10">
+                <h1 class="text-6xl">Lorem ipsum dolor<br>sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam rem laboriosam</p>
+            </div>
+            <form class="flex flex-col w-3/12 gap-5 text-center" id="form">
+                <input type="email" name="email" id="input-email" placeholder="Enter your email" class="p-3 rounded-lg border-2" oninput="emailValidation()">
+                <p class="text-red-600 hidden" id="invalid">invalid email</p>
+                <button id="input-button" class="bg-purple-500 text-white py-2 rounded-lg">Sign up</button>
+                <p class="text-gray-500 text-sm">This forms don't get your info</p>
+            </form>
+        </div>
+        <div class="w-full flex flex-col items-center">
+            <h2 class="text-4xl">More projects</h2>
+            <ul class="flex justify-around w-full">
+                <li><a href="https://luizgabrielop.github.io/Clothes/" target="_blank"><img src="https://i.pinimg.com/originals/66/f3/53/66f3534cbaeb2f8fb9a7c9e80d1594b2.gif"></a></li>
+                <li><a href="https://luizgabrielop.github.io/Kiladez/" target="_blank"><img src="https://i.pinimg.com/originals/e9/e9/bc/e9e9bc4f350b984809f19ba230277800.gif"></a></li>
+                <li><a href="https://luizgabrielop.github.io/acaistore/" target="_blank"><img src="https://i.pinimg.com/originals/d2/d6/5e/d2d65e6b2882a3ea8e144ea5c1001a00.gif"></a></li>
+            </ul>
+        </div>
+        <footer class="h-40 flex items-center justify-center">Inspirate in Miro Website</footer>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
 </body>
 </html>
